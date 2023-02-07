@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="abc">
+        <label>chọn:</label>
+        <div>nước uống
+            <select id="nu">
+                <option value="0"></option>
+                <option value="17000">cocacola</option>
+                <option value="15000">nước suối</option>
+                <option value="17000"> 7UP</option>
+                <option value="17000">PEPSSI</option>
+                <option value="17000">CAM ÉP</option>
+                <option value="17000">STING</option>
+                <option value="20000">BÒ HÚC</option>
+            </select> <br><br>
+        </div>
+        <div>Trái cây
+            <select id="tc">
+                <option value="0"></option>
+                <option value="9000">trái cây nhỏ</option>
+                <option value="18900">trái cây lớn</option>
+                <option value="12400"> Bưởi</option>
+            </select> <br><br>
+        </div>
+        <div>Tiền
+            <input type="number" id="mm">
+        </div> <br>
+        <div>
+            resuslt :
+            <p>
+                <input type="text" id="td" style="border: none;"><br>
+                <input type="text" id="qq" style="border: none;"><br>
+                <span id="kq"></span>
+            </p>
+        </div> <br><br>
+        <div>
+            <button type="button" onclick="caculate()">ok</button>
+            <button type="button" onclick="cancel()">Cancel</button>
+        </div>
+    </form>
+    <script>
+        function caculate() {
+
+            var optionDrink = document.forms["abc"].nu.value;
+            document.getElementById('kq').innerHTML=optionDrink;
+            console.log(optionDrink);
+            var optionfruit = document.forms["abc"].tc.value;
+            console.log(optionfruit);
+            var money = document.getElementById('mm').value;
+            console.log(money);
+            var result= money-(Number(optionDrink) + Number(optionfruit))
+            console.log( result);
+            if(result>0){
+                document.getElementById("td").value="mời bạn xơi nuoc";
+                document.getElementById("qq").value="số tiền còn lại của bạn là:";
+                document.getElementById("kq").innerHTML = result;
+            }
+            else{
+                
+                document.getElementById("kq").innerHTML = "Bạn ko đủ tiền để thực hiện giao dịch"
+            }
+        } 
+        function cancel(){
+           window.location.reload();
+          
+        }
+       
+    </script>
+</body>
+
+</html>

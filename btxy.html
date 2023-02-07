@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   <p>
+        <label >  enter your name:</label>    
+        <input type="text" name="aq" id="fname" onkeyup="myFunction()">
+        <label >  enter your name:</label> 
+        <input type="text" name="qa" id="nname" onkeyup="myFunction()">
+   </p>
+    <p>   my name is: <span id="demo"></span> </p>
+    <script>
+        function myFunction(){
+            var x=parseInt(document.getElementById("fname").value);
+            var y=parseInt(document.getElementById("nname").value);
+            document.getElementById("demo").innerHTML=x-y;
+
+        }
+    </script>
+</body>
+</html>

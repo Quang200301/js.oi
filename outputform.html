@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <div>
+            <label>input:</label>
+            <input type="text" name="input" id="input">
+        </div>
+        <div>
+            result:
+            <p>
+                <span id="kq"></span>
+            </p>
+        </div>
+    </form> <br>
+    <button id="ok" onclick="ok()">ok</button>
+    <script>
+        function ok(){
+            var input= document.getElementById("input").value;
+            console.log(input)
+            document.getElementById("kq").innerHTML=input;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        function garde(score,name){
+            var string_garde;
+            if(score >= 0 && score <=100){
+                if(score >90){
+                    string_garde='Exelence';
+                }else if(score >80){
+                    string_garde='Very Good';
+                }else if(score >60){
+                    string_garde = 'Fair';
+                }else if(score >=50){
+                    string_garde='Medium';
+                }else {
+                    string_garde='Fail';
+                }
+                    
+                
+            }else{
+                string_garde='score must betwent 0 and 100'
+            }
+            document.getElementById('str_garde').innerHTML=name+" ' s garde is <b>"+string_garde+'</b>';
+
+        }
+    </script>
+</head>
+<body>
+    <form name="frm_garde" action="#"method="post">
+        <label> Input Student Name:</label>
+        <input type="text" name="txt_name" value=""/>
+        <br/>
+        <label > Input Score      : </label>
+        <input type="" name="txt_score" value="">
+        <input type="button" name="btn_garde"onclick="garde(txt_score.value,txt_name.value)"value="Define Garde"/>
+    </form>
+    <div id="str_garde">&nbsp;</div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta c8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" harset="UTF-content="width=device-width, initial-scale=1.0>
+    <title>Document</title>
+</head>
+<body>
+    <form name="q_name" action="" method="">
+        <label > input your name  :</label>
+        <input type="text" name="q_name" value=""/>
+        <label> input your score:</label>
+        <input type="" name="q_score" value="">
+        <input type="button" name="easy" onclick ="diem(q_score.value,q_name.value)"value="ket qua"/>
+
+    </form>
+    <div id="str_diem">&nbsp; </div>
+    <script language="javascript" type ="text/javascript"> 
+        function diem(score,name){
+            var string_diem;
+            if (score>0 && score<100){
+                if(score>90){
+                    string_diem='xuatxac';
+                }else if(score>80){
+                    string_diem='tuyet voi';
+                }else if (score>60){
+                    string_diem='kha tuyet';
+                }
+                else if(score>50){
+                    string_diem='hoi non';
+                }else{
+                    string_diem='qua non';
+                }
+
+            }else{
+                string_diem='so nay khong ton tai ';
+            }
+        document.getElementById('str_diem').innerHTML=name+"'s diem la <b>"+string_diem+'</b>';
+
+        }
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript " type="text/javascript">
+        function diem(score,name){
+            var string_diem;
+            if (score>0 && score<100){
+                if (score >90){
+                    string_diem='ban qua thong minh';
+                }else if(score>70){
+                    string_diem='ban tuyet voi hon rat nhieu nguoi roi day';
+                } else if(score>50){
+                    string_diem='ban can co gang nhieu hon chut nua nhe';
+                }else{
+                    string_diem='khong sao thua keo nay minh  lam keo khac ';
+                }
+            }else{
+                string_diem='ban can nhap con so trong pham vi tu 0 den 100';
+            }
+        document.getElementById('str_diem').innerHTML=name+"'s diem is <br>"+string_diem+'</br>';
+        }
+    </script>
+</head>
+<body>
+    <form name="q_name" action="" method="">
+        <label >nhap ten cua ban:</label>
+        <input type="text" name="n_name" value=""/>
+        <label > nhap diem cua ban:</label>
+        <input type="" name="n_diem" value="">
+        <input type="button" name="" onclick="diem(n_diem.value,n_name.value)"value="ketqua"/>
+    </form>
+    <div id="str_diem">&nbsp;</div>
+</body>
+</html>

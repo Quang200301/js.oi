@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f_name" action="" method="">
+        <label> nhap ten cua ban :</label>
+        <input type="text" name="n_name" value="">
+        <label > nhap diem cua ban de xac nhan:</label>
+        <input type="" name="n_diem" value="">
+        <input type="button" name="" onclick="diem(n_diem.value,n_name.value)"value="DapAn">
+    </form>
+    <div id="str_diem"> &nbsp;</div>
+    <script language="javascipt" type="text/javascript">
+        function diem(score,name){
+            var string_pefect;
+            if(score>0 && score<100){
+                
+                if(score>90){
+                    string_pefect='are you very good 10 diem';
+                }else if(score>60){
+                    string_pefect='are you a nmuber one pefect';
+                }else{
+                    string_pefect='lost';
+                }
+            }else{
+                string_pefect='ban can nhap con so trong pham vi tu 0 den 99';
+            }
+        document.getElementById('str_diem').innerHTML=name+"'s diem la <br>"+string_pefect+'</br>';
+            
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="q_name" action="" method="">
+        <label > nhap ten cua ban:</label>
+        <input type="text" name="q_name" value="">
+        <label > nhap diem cua ban:</label>
+        <input type="" name="q_diem" value="">
+        <input type="button" name="" onclick="diem(q_diem.value,q_name.value)"value="dapan" >
+    </form>
+    <div id = str_diem> &nbsp;</div>
+    <script>
+        function diem(score, grade){
+            var string_score;
+            if(score>0 && score<100){
+                if(score>90){
+                    string_score='are you talent';
+            document.getElementById("demo").style.color='yellow';
+                }else if(score >70){
+                    string_score='are you smatter';
+                } else if(score>50){
+                    string_score='are you ok';
+                }else {
+                    string_score='are you bad';
+                }
+            }else{
+                string_score='nhap lai lua chon hop le';
+            }
+        document.getElementById('str_diem').innerHTML=name+"'grade is <br>"+string_score+'</br>'
+        }
+    </script>
+</body>
+</html>

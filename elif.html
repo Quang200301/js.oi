@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> function is triggered when the user releases akey in the 
+    The function outputs the actual key/letter that was released is 
+    field </p>
+    <input type="number" name="" id="nhap">
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var number =document.getElementById("nhap").value;
+            var greeing;
+            if (number==0){
+                document.getElementById("demo").innerHTML="ban duoc o diem";
+                document.getElementById("demo").style.color='yellow';
+            }else if (number>0)
+            {
+                document.getElementById("demo").innerHTML="do la so duong";
+                document.getElementById("demo").style.color='blue';
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML="Day la so am";
+            }
+            //document.getElementById("demo").innerHTML=greeing;//
+
+        }    
+
+    </script>
+</body>
+
+</html>
